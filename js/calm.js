@@ -18,7 +18,7 @@ function setup() {
 function draw() {
 	translate(width / 2, height / 2);
 	beginShape();
-	for (var i = 0; i < 360; i++) {
+	for (var i = 0; i < 750; i++) {
 		var ang = map(i, 0, 360, 0, TWO_PI);
 		var rad = 250 * noise(i * 0.01, t * 0.005);
 		var x = rad * cos(ang);
@@ -48,7 +48,7 @@ function draw() {
 	
 	endShape();
 
-	t += .4;
+	t += .5;
 
 	// clear the background every 600 frames using mod (%) operator
 	if (frameCount % 600 == 0) {

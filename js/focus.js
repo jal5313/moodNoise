@@ -38,7 +38,7 @@ function draw() {
 	}
 	endShape(CLOSE);
 
-	t += .4;
+	t += .5;
 
 	// clear the background every 600 frames using mod (%) operator
 	if (frameCount % 600 == 0) {

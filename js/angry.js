@@ -11,7 +11,7 @@ function setup() {
 function draw() {
   translate(width/2, height/2);
   beginShape();
-  for (var i = 0; i < 100; i++) {
+  for (var i = 0; i < 300; i++) {
     var ang = map(i, 0, 100, 0, TWO_PI);
     var rad = 250 * noise(i * 0.3, t * 0.01);
     var x = rad * cos(ang);
@@ -20,10 +20,10 @@ function draw() {
   }
   endShape(CLOSE);
 
-  t += 1.5;
+  t += .5;
 
   // clear the background every 600 frames using mod (%) operator
-  if (frameCount % 300 == 0) {
+  if (frameCount % 1000 == 0) {
 	background(0);
   }
 
