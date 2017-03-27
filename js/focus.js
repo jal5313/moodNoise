@@ -1,4 +1,4 @@
-/*calm*/
+/*focus*/
 var t; 
 
 function setup() {
@@ -12,8 +12,8 @@ function setup() {
 function draw() {
 	translate(width / 2, height / 2);
 	beginShape();
-	for (var i = 0; i < 350; i++) {
-		var ang = map(i, 0, 360, 0, TWO_PI);
+	for (var i = 0; i < 353; i++) {
+		var ang = map(i, 0, 350, 0, TWO_PI);
 		var rad = 250 * noise(0, t * 0.005);
 		var x = rad * cos(ang);
 		var y = rad * sin(ang);
@@ -36,7 +36,7 @@ function draw() {
 			
 		}
 	}
-	endShape(CLOSE);
+	endShape();
 
 	t += .5;
 

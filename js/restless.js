@@ -1,10 +1,10 @@
-/*angry*/
+/*restless*/
 var t;
 
 function setup() {
   createCanvas(window.innerWidth, window.innerHeight);
   background(0);
-  stroke(255, 40, 40, 30);
+  stroke(254, 19, 180, 30);
   noFill();
   t = 0;
 }
