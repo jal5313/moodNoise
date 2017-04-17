@@ -19,7 +19,7 @@ function draw() {
     var y = rad * sin(ang);
     curveVertex(x, y);
   }
-  endShape();
+  endShape(CLOSE);
 
   t += .5;
 
