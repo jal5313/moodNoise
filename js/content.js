@@ -14,7 +14,7 @@ function draw() {
 	 
   translate(width/2, height/2);
   beginShape();
-  for (var i = 0; i < 900; i++) {
+  for (var i = 0; i < 300; i++) {
     var ang = map(i, 0, 300, 0, TWO_PI);
     var rad = 200 * noise(i * 0.01, t * 0.005);
     var x = rad * cos(ang);
